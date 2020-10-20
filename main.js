@@ -2,13 +2,6 @@ var images = [
   "url('pics/pic1.jpg')",
   "url('pics/pic2.jpg')",
   "url('pics/pic3.jpg')",
-  "url('pics/pic4.jpg')",
-  "url('pics/pic5.jpg')",
-  "url('pics/pic6.jpg')",
-  "url('pics/pic7.jpg')",
-  "url('pics/pic8.jpg')",
-  "url('pics/pic9.jpg')",
-  "url('pics/pic10.jpg')",
 ];
 
 var num = 0;
