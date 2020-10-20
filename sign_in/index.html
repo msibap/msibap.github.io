@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homayoun | Sign In</title>
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="../shared.css" />
+    <link rel="stylesheet" href="sign_in.css" />
+  </head>
+
+  <body>
+    <!-- ------------- BACKDROP ------------- -->
+    <div class="back-drop"></div>
+
+    <!-- ------------- HAMBURGER BUTTON ------------- -->
+    <header class="main-header">
+      <div>
+        <button title="OPEN MENU" class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+        <!-- ------------- WEBSITE LOGO ------------- -->
+        <a href="../index.html" class="main-header__logo"
+          ><img src="../pics/logo.svg" alt="Logo Here!" title="HOME"
+        /></a>
+        <a href="../index.html" title="HOME" class="main-header__brand"
+          >HOMAYOUN</a
+        >
+      </div>
+
+      <!--  ------------- MAIN NAV BAR ------------- -->
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li title="CONTENTS" class="main-nav__item">
+            <a href="../contents/index.html">CONTENTS</a>
+          </li>
+          <li title="ABOUT ME" class="main-nav__item">
+            <a href="../about/index.html">ABOUT ME</a>
+          </li>
+          <li title="SIGN IN" class="main-nav__item main-nav__item--cta">
+            <a href="index.html">SIGN IN</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ------------- MOBILE NAV BAR ------------- -->
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li title="SIGN IN" class="mobile-nav__item mobile-nav__item--cta">
+          <a href="index.html">SIGN IN</a>
+        </li>
+        <li title="HOME" class="mobile-nav__item">
+          <a href="../index.html">HOME</a>
+        </li>
+        <li title="CONTENTS" class="mobile-nav__item">
+          <a href="../contents/index.html">CONTENTS</a>
+        </li>
+        <li title="ABOUT ME" class="mobile-nav__item">
+          <a href="../about/index.html">ABOUT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <form action="index.html">
+        <fieldset class="signup-form">
+          <legend class="signup-title">Let's Sign Up</legend>
+          <br />
+          <label for="title">Title</label>
+          <select id="title">
+            <option value="mr">Mr.</option>
+            <option value="ms">Ms.</option>
+          </select>
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" />
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" />
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" />
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+          <input type="checkbox" id="agree-terms" />
+          <label for="agree-terms"
+            >Agree to
+            <a href="#">Terms &amp; Conditions</a>
+          </label>
+          <input type="submit" class="button" value="sign up" />
+        </fieldset>
+      </form>
+    </main>
+
+    <!-- ------------- MAIN FOOTER ------------- -->
+    <footer class="main-footer">
+      <nav>
+        <ul class="main-footer__links">
+          <li class="main-footer__link"><a href="#">GO TO TOP</a></li>
+          <li class="main-footer__link">
+            <a href="../index.html">HOME</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="../contents/index.html">CONTENTS</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="../about/index.html">ABOUT ME</a>
+          </li>
+          <li class="main-footer__link"><a href="index.html">SIGN IN</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- ------------- JAVASCRIPT FILE(S) ------------- -->
+    <script src="../shared.js"></script>
+  </body>
+</html>
