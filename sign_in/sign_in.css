@@ -8,6 +8,18 @@ fieldset {
   transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
+.background-image {
+  background-image: url(../pics/about_bgrd.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 85vh;
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
 .signup-title {
   font-size: 2rem;
   font-weight: bold;
@@ -17,6 +29,7 @@ fieldset {
 .signup-form {
   margin: 0;
   color: orange;
+  background: rgba(0, 0, 0, 0.4);
   font: inherit;
   padding: 1rem;
   font-size: 1.2rem;
@@ -27,6 +40,7 @@ fieldset {
   border: 8px double orange;
   border-radius: 10px;
   width: 90vw;
+  backdrop-filter: blur(5px);
   text-align: center;
 }
 
