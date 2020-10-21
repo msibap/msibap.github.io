@@ -3,6 +3,13 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
+.signup-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 .signup-form {
   margin: 0;
   color: orange;
@@ -19,35 +26,40 @@ main {
   text-align: center;
 }
 
-.signup-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
 .signup-form label,
 .signup-form input,
 .signup-form select {
   width: 100%;
   margin: 0.5rem 0;
 }
+
 .checkbox-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  /* width: 100%; */
-  /* text-align: center; */
+  width: 100%;
+}
+.checkbox-container a {
+  color: darkorange;
+}
+
+.checkbox-container a:hover,
+.checkbox-container a:active {
+  color: white;
 }
 
 .signup-form input[type="checkbox"] {
   background-color: white;
   appearance: none;
-  margin: 0.2rem;
+  margin: 0 0.2rem;
   padding: 0;
   border: 3px solid orange;
+  border-radius: 5px;
   width: 1rem;
   height: 1rem;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 .signup-form input[type="checkbox"]:focus {
