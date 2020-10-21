@@ -59,7 +59,7 @@ main {
   padding: 1rem;
   font-size: 1.8rem;
   font-weight: bold;
-  font-variant: small-caps;
+  /* font-variant: small-caps; */
   text-shadow: 2px 2px black;
   margin: 1rem 0;
   /* border: 5px solid orange; */
