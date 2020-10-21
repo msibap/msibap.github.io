@@ -26,11 +26,46 @@ main {
   text-align: center;
 }
 
+.signup-form :invalid {
+  border-color: red;
+  background-color: rgb(255, 160, 160);
+}
+
 .signup-form label,
 .signup-form input,
 .signup-form select {
   width: 100%;
   margin: 0.5rem 0;
+  padding: 0.2rem;
+  font: inherit;
+}
+
+.signup-form select {
+  background-color: white;
+  border: 3px solid orange;
+  border-radius: 5px;
+}
+
+.signup-form label {
+  font-weight: bold;
+  min-width: max-content;
+  margin: auto;
+}
+
+.signup-form input {
+  background-color: white;
+  border: 3px solid orange;
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.signup-form input:focus {
+  color: white;
+  background-color: orange;
+}
+.signup-form input::selection {
+  color: orange;
+  background-color: #242424;
 }
 
 .checkbox-container {
@@ -40,8 +75,10 @@ main {
   align-items: center;
   width: 100%;
 }
+
 .checkbox-container a {
-  color: darkorange;
+  color: rgb(226, 124, 0);
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .checkbox-container a:hover,
@@ -50,20 +87,20 @@ main {
 }
 
 .signup-form input[type="checkbox"] {
-  background-color: white;
   appearance: none;
+  background-color: white;
   margin: 0 0.2rem;
   padding: 0;
   border: 3px solid orange;
   border-radius: 5px;
   width: 1rem;
   height: 1rem;
-  vertical-align: middle;
   cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.signup-form input[type="checkbox"]:focus {
-  outline: none;
+.signup-form input[type="checkbox"]:checked {
+  background-color: darkorange;
 }
 
 .submit {
@@ -90,6 +127,14 @@ main {
   background: orange;
   color: white;
 }
-.submit-button:focus {
+.submit-button:focus,
+.signup-form input,
+.signup-form select {
   outline: none;
+}
+
+@media (min-width: 48rem) and (orientation: landscape) {
+  .signup-form {
+    width: 5rem;
+  }
 }
