@@ -8,10 +8,10 @@ main {
   color: orange;
   font: inherit;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   border: 8px double orange;
   border-radius: 10px;
@@ -26,9 +26,10 @@ main {
 }
 
 .signup-form label,
-.signup-form input {
+.signup-form input,
+.signup-form select {
   width: 100%;
-  margin: 0.2rem 0;
+  margin: 0.5rem 0;
 }
 .checkbox-container {
   display: flex;
@@ -53,17 +54,23 @@ main {
   outline: none;
 }
 
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
 .submit-button {
   color: orange;
   border: 3px solid orange;
   border-radius: 5px;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   padding: 0.5rem 0;
   background: none;
   font: inherit;
   font-weight: bold;
-  width: 100%;
+  width: 60vw;
   transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  cursor: pointer;
 }
 
 .submit-button:hover,
