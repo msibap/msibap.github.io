@@ -4,6 +4,10 @@ main {
   align-items: center;
 }
 
+fieldset {
+  transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
 .signup-title {
   font-size: 2rem;
   font-weight: bold;
@@ -56,7 +60,6 @@ main {
   background-color: white;
   border: 3px solid orange;
   border-radius: 5px;
-  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .signup-form input:focus {
@@ -78,7 +81,6 @@ main {
 
 .checkbox-container a {
   color: rgb(226, 124, 0);
-  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .checkbox-container a:hover,
@@ -96,7 +98,6 @@ main {
   width: 1rem;
   height: 1rem;
   cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .signup-form input[type="checkbox"]:checked {
@@ -106,6 +107,7 @@ main {
 .submit {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .submit-button {
@@ -113,12 +115,11 @@ main {
   border: 3px solid orange;
   border-radius: 5px;
   margin: 1.5rem 0;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   background: none;
   font: inherit;
   font-weight: bold;
   width: 60vw;
-  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   cursor: pointer;
 }
 
@@ -134,7 +135,23 @@ main {
 }
 
 @media (min-width: 48rem) and (orientation: landscape) {
+  .signup-title {
+    text-align: left;
+  }
   .signup-form {
-    width: 5rem;
+    width: 50vw;
+    max-width: 48rem;
+    text-align: left;
+  }
+
+  .checkbox-container {
+    justify-content: flex-start;
+  }
+
+  .submit {
+    justify-content: flex-end;
+  }
+  .submit-button {
+    max-width: max-content;
   }
 }
