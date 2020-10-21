@@ -17,7 +17,6 @@ fieldset {
   z-index: -1;
   width: 100vw;
   height: 85vh;
-  transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .signup-title {
