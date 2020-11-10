@@ -4,7 +4,7 @@ main {
   align-items: center;
 }
 .background-image {
-  background-image: url("../pics/pic_back_grnd1.jpg");
+  background-image: url("../pics/pic_back_grnd1.webp");
   position: fixed;
   background-repeat: no-repeat;
   background-size: cover;

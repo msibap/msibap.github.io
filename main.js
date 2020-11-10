@@ -1,7 +1,7 @@
 var images = [
-  "url('pics/pic1.jpg')",
-  "url('pics/pic2.jpg')",
-  "url('pics/pic3.jpg')",
+  "url('pics/pic1.webp')",
+  "url('pics/pic2.webp')",
+  "url('pics/pic3.webp')",
 ];
 
 var num = 0;
