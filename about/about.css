@@ -2,17 +2,30 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
 }
 
 .background-image {
-  background-image: url(../pics/about_bgrd.svg);
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background-image: url(../pics/about_bgrd.svg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: fixed;
   z-index: -1;
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
 }
 
 .about {
@@ -20,11 +33,18 @@ main {
   flex-direction: column;
   align-items: center;
   width: 80%;
+  padding-top: 4rem;
 }
 
 .about__image {
   margin: 1rem;
-  background: url(../pics/about_picture.svg) orange;
+  background: url(../pics/about_picture.svg),
+    radial-gradient(
+      circle,
+      rgba(255, 188, 0, 1) 0%,
+      rgba(230, 165, 13, 1) 25%,
+      rgba(255, 85, 0, 1) 100%
+    );
   background-position: center;
   background-size: 103%;
   background-repeat: no-repeat;
@@ -41,7 +61,7 @@ main {
 
 .about__image:hover,
 .about__image:active {
-  box-shadow: inset 0px 0px 45px black;
+  box-shadow: inset 0px 0px 10px black;
 }
 
 .about__description {
@@ -54,16 +74,14 @@ main {
   color: orange;
   background: #141414af;
   backdrop-filter: blur(5px);
-  width: 70vw;
+  width: 90vw;
   padding: 1rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-  /* font-variant: small-caps; */
+  font-size: 1.5rem;
   text-shadow: 2px 2px black;
   margin: 1rem 0;
   /* border: 5px solid orange; */
-  border-radius: 8px;
-  text-align: center;
+  border-radius: 5px;
+  text-align: justify;
   transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
   cursor: default;
 }
@@ -118,10 +136,10 @@ main {
 .about__social__box__address {
   margin: 1rem;
   font-variant: normal;
-  font-size: 4.5vw;
+  font-size: 1.5rem;
 }
 
-@media (min-width: 48rem) and (orientation: landscape) {
+@media (min-width: 768px) and (orientation: landscape) {
   .about {
     flex-direction: row;
     justify-content: space-evenly;
@@ -138,19 +156,19 @@ main {
   .about__text {
     margin: 0.5rem;
     width: 40vw;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .about__social__box__logo {
     min-width: 3rem;
     min-height: 3rem;
-    max-width: 5rem;
-    max-height: 5rem;
+    max-width: 4rem;
+    max-height: 4rem;
     margin: 0rem;
     width: 5vw;
     height: 5vw;
   }
   .about__social__box__address {
-    font-size: 2vw;
+    font-size: 1.5rem;
     margin: 1rem;
     /* min-width: max-content; */
   }
