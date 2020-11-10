@@ -61,7 +61,7 @@ main {
 }
 
 .about__text {
-  color: orange;
+  color: white;
   background: #141414af;
   backdrop-filter: blur(5px);
   width: 90vw;
