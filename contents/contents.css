@@ -110,7 +110,7 @@ main {
   color: white;
 }
 
-@media (min-width: 48rem) and (orientation: landscape) {
+@media (min-width: 768px) and (orientation: landscape) {
   .cards {
     display: flex;
     flex-direction: row;

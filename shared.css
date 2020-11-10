@@ -295,7 +295,7 @@ main {
   display: block !important;
 }
 
-@media (min-width: 48rem) and (orientation: landscape) {
+@media (min-width: 768px) and (orientation: landscape) {
   .main-header__brand {
     font-size: 2.6rem;
     display: block;
