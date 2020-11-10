@@ -6,18 +6,13 @@ main {
 }
 
 .background-image {
-  background: #f12711; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #f5af19,
-    #f12711
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #f5af19,
-    #f12711
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-color: #ff8342;
+  background-image: linear-gradient(
+    62deg,
+    #ff8342 0%,
+    #f7ce68 50%,
+    #f98f0a 100%
+  );
   /* background-image: url(../pics/about_bgrd.svg); */
   background-size: cover;
   background-position: center;
@@ -39,12 +34,7 @@ main {
 .about__image {
   margin: 1rem;
   background: url(../pics/about_picture.svg),
-    radial-gradient(
-      circle,
-      rgba(255, 188, 0, 1) 0%,
-      rgba(230, 165, 13, 1) 25%,
-      rgba(255, 85, 0, 1) 100%
-    );
+    linear-gradient(180deg, #fad961 0%, #f76b1c 100%);
   background-position: center;
   background-size: 103%;
   background-repeat: no-repeat;
