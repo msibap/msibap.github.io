@@ -74,7 +74,7 @@ main {
 }
 
 #plus {
-  background: #252525ca;
+  background: rgba(37, 37, 37, 0.792);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +95,7 @@ main {
 }
 
 #free {
-  background: #5d5d5dca;
+  background: rgba(93, 93, 93, 0.659);
 }
 
 #free:hover {
@@ -115,7 +115,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 100%;
   }
   #plus {

@@ -326,7 +326,7 @@ main {
   .main-footer__links {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-justify-content: space-around;
     width: 100%;
   }
 
