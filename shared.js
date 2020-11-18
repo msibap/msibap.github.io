@@ -14,8 +14,12 @@ for (let i = 0; i < selectProductButtons.length; i++) {
   selectProductButtons[i].addEventListener("click", function () {
     // modal.style.display = "block";
     // backdrop.style.display = "block";
-    modal.classList.add("open");
-    backdrop.classList.add("open");
+    backdrop.style.display = "block";
+    modal.style.display = "block";
+    setTimeout(function () {
+      backdrop.classList.add("open");
+      modal.classList.add("open");
+    }, 10);
   });
 }
 
@@ -32,15 +36,25 @@ if (modalCancelButton) {
 function closeModal() {
   // backdrop.style.display = "none";
   // modal.style.display = "none";
-  backdrop.classList.remove("open");
   if (modal) {
     modal.classList.remove("open");
   }
+  setTimeout(function () {
+    backdrop.style.display = "none";
+    modal.style.display = "none";
+    mobileNav.style.display = "none";
+  }, 300);
+  backdrop.classList.remove("open");
 }
 
 mobileNavButton.addEventListener("click", function () {
   // mobileNav.style.display = "block";
   // backdrop.style.display = "block";
-  mobileNav.classList.add("open");
-  backdrop.classList.add("open");
+  mobileNav.style.display = "block";
+  backdrop.style.display = "block";
+  modal.style.display = "block";
+  setTimeout(function () {
+    backdrop.classList.add("open");
+    mobileNav.classList.add("open");
+  }, 10);
 });
