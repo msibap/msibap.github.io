@@ -102,6 +102,7 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 #telegram {
@@ -109,6 +110,7 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 #gmail {
@@ -117,6 +119,13 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#gmail:hover,
+#telegram:hover,
+#instagram:hover {
+  transform: rotateY(180deg);
 }
 
 .about__social__box__logo {
