@@ -41,8 +41,10 @@ function closeModal() {
   }
   setTimeout(function () {
     backdrop.style.display = "none";
-    modal.style.display = "none";
     mobileNav.style.display = "none";
+    if (modal) {
+      modal.style.display = "none";
+    }
   }, 300);
   backdrop.classList.remove("open");
 }
@@ -52,7 +54,9 @@ mobileNavButton.addEventListener("click", function () {
   // backdrop.style.display = "block";
   mobileNav.style.display = "block";
   backdrop.style.display = "block";
-  modal.style.display = "block";
+  if (modal) {
+    modal.style.display = "block";
+  }
   setTimeout(function () {
     backdrop.classList.add("open");
     mobileNav.classList.add("open");
