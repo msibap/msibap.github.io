@@ -78,6 +78,8 @@
   font-weight: bold;
   cursor: pointer;
   text-align: center;
+  margin-top: 1rem;
+  transition: all 1s cubic-bezier(0.46, 1.4, 0.61, 1.23);
 }
 
 .section-title:hover {
@@ -97,7 +99,8 @@
 
 .product {
   color: white;
-  background: darkorange;
+  background: linear-gradient(0deg, crimson, darkorange);
+  background-attachment: fixed;
   border-radius: 10px;
   /* display: inline-block; */
   margin: 0.5rem 0;
@@ -138,7 +141,8 @@
 }
 
 .product--highlighted {
-  background: orange;
+  background: linear-gradient(0deg, crimson, orange);
+  background-attachment: fixed;
   order: -1;
 }
 
@@ -187,8 +191,13 @@
 }
 
 .product-info__items {
-  color: #242424;
-  background: orange;
+  color: white;
+  /* background: linear-gradient(0deg, crimson, orange); */
+  background: url(pics/pic_back_grnd2.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
   border-radius: 10px;
   font-weight: bold;
   padding: 1rem;
@@ -205,36 +214,44 @@
   max-height: 13rem;
   min-width: 10rem;
   min-height: 10rem;
-  border: 6px solid #242424;
+  border: 6px solid white;
   border-radius: 50%;
   margin: 1rem 0;
   transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.product-info__logo:hover,
-.product-info__logo:active {
-  box-shadow: inset 0px 0px 20px black;
+  /* box-shadow: inset 0px 0px 10px black; */
 }
 
 #windows {
-  background: url(pics/windows.svg) darkorange;
+  background: url(pics/windows.svg);
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
+  filter: drop-shadow(0px 0px 4px black);
 }
 
 #apple {
-  background: url(pics/apple.svg) darkorange;
+  background: url(pics/apple.svg);
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
+  filter: drop-shadow(0px 0px 4px black);
 }
 
 #android {
-  background: url(pics/android.svg) darkorange;
+  background: url(pics/android.svg);
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
+  filter: drop-shadow(0 0 4px black);
+}
+
+#windows:hover,
+#apple:hover,
+#android:hover,
+#windows:active,
+#apple:active,
+#android:active {
+  filter: drop-shadow(0 0 0 white);
 }
 
 .product-info__item {
@@ -257,6 +274,7 @@
     text-align: center;
     font-size: 1.5rem;
     margin: 0;
+    margin-top: 1rem;
   }
 
   .products__section {
