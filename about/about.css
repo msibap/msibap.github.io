@@ -74,7 +74,7 @@ body {
   margin: 1rem 0;
   /* border: 5px solid orange; */
   border-radius: 5px;
-  text-align: justify;
+  text-align: left;
   transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
   cursor: default;
 }
