@@ -9,18 +9,15 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-origin: border-box;
-  background-clip: border-box;
   width: 100vw;
   height: 100vh;
   z-index: -10;
-  transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
@@ -28,23 +25,18 @@ main {
   border: 6px solid orange;
   border-radius: 20px;
   margin: 1rem 0.5rem;
-  transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+
   width: 70vw;
   min-width: 15rem;
   max-width: 32rem;
-  /* backdrop-filter: blur(5px); */
 }
 
-.card:hover,
-.card:active {
-  box-shadow: inset 0px 0px 30px black;
-}
 .card a {
   display: block;
   padding: 2rem;
   color: white;
   text-decoration: none;
-  text-shadow: 2px 2px black;
+
   font-variant: small-caps;
   height: 100%;
 }
@@ -69,24 +61,14 @@ main {
   border-radius: 5px;
   font-size: 1.4rem;
   font-weight: bold;
-  text-shadow: none;
-  text-align: center;
 }
 
 #plus {
   background: rgba(37, 37, 37, 0.792);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   order: -1;
 }
 
-#plus:hover {
-  box-shadow: inset 0px 0px 30px orange;
-}
-
 .card__badge {
-  margin: rem;
   padding: 0.5rem;
   border-radius: 5px;
   color: white;
@@ -96,10 +78,6 @@ main {
 
 #free {
   background: rgba(93, 93, 93, 0.659);
-}
-
-#free:hover {
-  box-shadow: inset 0px 0px 30px white;
 }
 
 #ultimate {
@@ -112,7 +90,6 @@ main {
 
 @media (min-width: 768px) and (orientation: landscape) {
   .cards {
-    display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-around;

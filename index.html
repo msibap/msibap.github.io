@@ -18,16 +18,14 @@
 
   <body>
     <!-- ------------- POP UP MODAL ------------- -->
-    <!-- ------------- BACKDROP ------------- -->
+    <!-- ------------- BACKDROP ----------------- -->
 
     <div class="back-drop"></div>
     <div class="modal">
-      <h1 class="modal__title">Do you want to continue?</h1>
+      <h2 class="modal__title">Do you want to continue?</h2>
       <div class="modal__actions">
         <a href="sign_in/index.html" class="modal__action">SIGN IN</a
-        ><button class="modal__action modal__action--negative" type="button">
-          CANCEL
-        </button>
+        ><button class="modal__action modal__action--negative">CANCEL</button>
       </div>
     </div>
 
@@ -42,11 +40,11 @@
 
         <!-- ------------- WEBSITE LOGO ------------- -->
         <a href="index.html" class="main-header__logo"
-          ><img src="../pics/logo.svg" alt="Logo Here!" title="HOME"
+          ><img src="pics/logo.svg" alt="Logo Here!" title="HOME"
         /></a>
 
         <a
-          href="../index.html"
+          href="https://msibap.github.io/"
           title="HOME"
           class="main-header__brand glitch"
           data-text="HOMAYOUN"
@@ -57,14 +55,20 @@
       <!--  -------------  MAIN NAV BAR ------------- -->
       <nav class="main-nav">
         <ul class="main-nav__items">
-          <li title="CONTENTS" class="main-nav__item">
-            <a href="contents/index.html">CONTENTS</a>
+          <li title="CONTENTS">
+            <a class="main-nav__items__item" href="contents/index.html"
+              >CONTENTS</a
+            >
           </li>
-          <li title="ABOUT ME" class="main-nav__item">
-            <a href="about/index.html">ABOUT ME</a>
+          <li title="ABOUT ME">
+            <a class="main-nav__items__item" href="about/index.html"
+              >ABOUT ME</a
+            >
           </li>
-          <li title="SIGN IN" class="main-nav__item main-nav__item--cta">
-            <a href="sign_in/index.html">SIGN IN</a>
+          <li title="SIGN IN">
+            <a class="main-nav__items__item cta" href="sign_in/index.html"
+              >SIGN IN</a
+            >
           </li>
         </ul>
       </nav>
@@ -72,15 +76,16 @@
 
     <!-- ------------- MOBILE NAV BAR ------------- -->
     <nav class="mobile-nav">
+      <div class="mobile-nav__close-btn">X</div>
       <ul class="mobile-nav__items">
-        <li title="SIGN IN" class="mobile-nav__item mobile-nav__item--cta">
-          <a href="sign_in/index.html">Sign In</a>
+        <li title="SIGN IN" class="mobile-nav__item">
+          <a class="mobile-nav__link" href="sign_in/index.html">Sign In</a>
         </li>
         <li title="CONTENTS" class="mobile-nav__item">
-          <a href="contents/index.html">Contents</a>
+          <a class="mobile-nav__link" href="contents/index.html">Contents</a>
         </li>
         <li title="ABOUT ME" class="mobile-nav__item">
-          <a href="about/index.html">About Me</a>
+          <a class="mobile-nav__link" href="about/index.html">About Me</a>
         </li>
       </ul>
     </nav>
@@ -90,8 +95,6 @@
       <!-- <div class="background-image"></div> -->
       <section id="page-overview">
         <button onclick="prev()" class="image__button prev"><</button>
-        <div id="slider" class="page-overview__images"></div>
-        <!-- <img id="slider" src="pics/pic1.jpg" class="page-overview__images" /> -->
         <button onclick="next()" class="image__button next">></button>
       </section>
 
@@ -102,15 +105,15 @@
         >
         <ul class="product-info__items">
           <li class="product-info__item">
-            <div class="product-info__logo" id="windows"></div>
+            <div class="product-info__logo windows"></div>
             <p>WINDOWS</p>
           </li>
           <li class="product-info__item">
-            <div class="product-info__logo" id="apple"></div>
+            <div class="product-info__logo apple"></div>
             <p>iOS</p>
           </li>
           <li class="product-info__item">
-            <div class="product-info__logo" id="android"></div>
+            <div class="product-info__logo android"></div>
             <p>ANDROID</p>
           </li>
         </ul>
@@ -179,18 +182,18 @@
     <!-- ------------- MAIN FOOTER ------------- -->
     <footer class="main-footer">
       <nav>
-        <ul class="main-footer__links">
-          <li class="main-footer__link"><a href="#">GO TO TOP</a></li>
-          <li class="main-footer__link">
-            <a href="contents/index.html">CONTENTS</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="about/index.html">ABOUT ME</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="sign_in/index.html">SIGN IN</a>
-          </li>
-        </ul>
+        <div class="main-footer__links">
+          <a class="main-footer__links__link" href="#">GO TO TOP</a>
+          <a class="main-footer__links__link" href="contents/index.html"
+            >CONTENTS</a
+          >
+          <a class="main-footer__links__link" href="about/index.html"
+            >ABOUT ME</a
+          >
+          <a class="main-footer__links__link" href="sign_in/index.html"
+            >SIGN IN</a
+          >
+        </div>
       </nav>
     </footer>
 

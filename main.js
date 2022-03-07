@@ -1,18 +1,18 @@
-var images = [
+let images = [
   "url('pics/pic1.webp')",
   "url('pics/pic2.webp')",
   "url('pics/pic3.webp')",
 ];
 
-var num = 0;
-var pageImage = document.querySelector(".page-overview__images");
-var timerCountdown;
-var intervalTime = 5000;
+let num = 0;
+let pageImage = document.getElementById("page-overview");
+let timerCountdown;
+let intervalTime = 5000;
 
 startInterval(intervalTime);
 
 function next() {
-  var slider = document.getElementById("slider");
+  let slider = document.getElementById("slider");
   num++;
   if (num >= images.length) {
     num = 0;
@@ -25,7 +25,7 @@ function next() {
 }
 
 function prev() {
-  var slider = document.getElementById("slider");
+  let slider = document.getElementById("slider");
   num--;
   if (num < 0) {
     num = images.length - 1;

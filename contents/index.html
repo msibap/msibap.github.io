@@ -39,14 +39,18 @@
       <!--  ------------- MAIN NAV BAR ------------- -->
       <nav class="main-nav">
         <ul class="main-nav__items">
-          <li title="CONTENTS" class="main-nav__item">
-            <a href="index.html">CONTENTS</a>
+          <li title="HOME">
+            <a class="main-nav__items__item" href="../index.html">HOME</a>
           </li>
-          <li title="ABOUT ME" class="main-nav__item">
-            <a href="../about/index.html">ABOUT ME</a>
+          <li title="ABOUT ME">
+            <a class="main-nav__items__item" href="../about/index.html"
+              >ABOUT ME</a
+            >
           </li>
-          <li title="SIGN IN" class="main-nav__item main-nav__item--cta">
-            <a href="../sign_in/index.html">SIGN IN</a>
+          <li title="SIGN IN">
+            <a class="main-nav__items__item cta" href="../sign_in/index.html"
+              >SIGN IN</a
+            >
           </li>
         </ul>
       </nav>
@@ -54,15 +58,16 @@
 
     <!-- ------------- MOBILE NAV BAR ------------- -->
     <nav class="mobile-nav">
+      <div class="mobile-nav__close-btn">X</div>
       <ul class="mobile-nav__items">
-        <li title="SIGN IN" class="mobile-nav__item mobile-nav__item--cta">
-          <a href="../sign_in/index.html">SIGN IN</a>
+        <li title="SIGN IN" class="mobile-nav__item">
+          <a class="mobile-nav__link" href="../sign_in/index.html">Sign In</a>
         </li>
-        <li title="HOME" class="mobile-nav__item">
-          <a href="../index.html">HOME</a>
+        <li title="SIGN IN" class="mobile-nav__item">
+          <a class="mobile-nav__link" href="../index.html">Home</a>
         </li>
         <li title="ABOUT ME" class="mobile-nav__item">
-          <a href="../about/index.html">About Me</a>
+          <a class="mobile-nav__link" href="../about/index.html">About Me</a>
         </li>
       </ul>
     </nav>
@@ -120,21 +125,16 @@
     <!-- ------------- MAIN FOOTER ------------- -->
     <footer class="main-footer">
       <nav>
-        <ul class="main-footer__links">
-          <li class="main-footer__link"><a href="#">GO TO TOP</a></li>
-          <li class="main-footer__link">
-            <a href="../index.html">HOME</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="index.html">CONTENTS</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="../about/index.html">ABOUT ME</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="../sign_in/index.html">SIGN IN</a>
-          </li>
-        </ul>
+        <div class="main-footer__links">
+          <a class="main-footer__links__link" href="#">GO TO TOP</a>
+          <a class="main-footer__links__link" href="../sign_in/index.html"
+            >SIGN IN</a
+          >
+          <a class="main-footer__links__link" href="../index.html">HOME</a>
+          <a class="main-footer__links__link" href="../about/index.html"
+            >ABOUT ME</a
+          >
+        </div>
       </nav>
     </footer>
 
